@@ -17,18 +17,21 @@ shinyUI(navbarPage("Data Science Capstone ",
 
                               ),
                               mainPanel(
-                                h2("Predicted Next Word"),
+                                h4("Predicted Next Word"),
                                 textOutput("prediction"),
                                 h4("Text Input:"),
-                                tags$style(type='text/css', '#text1 {background-color: rgba(255,255,0,0.40); color: gray;}'), 
+                                tags$style(type='text/css', '#text1 { color: gray;}'), 
                                 textOutput('text1'),
                                 br(),
                                 h4("Prediction Model:"),
-                                tags$style(type='text/css', ' #text2 {background-color: rgba(255,255,0,0.40); color: black;}'),
+                                tags$style(type='text/css', ' #text2 {color: black;}'),
                                textOutput('text2')
                               )
-                            )
- 
-                 )  
+                          )
+                 ),
+                 tabPanel("About this Application", includeMarkdown("Capstone.md")
+                      
+                 )
 )
 )
+

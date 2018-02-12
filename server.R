@@ -17,9 +17,9 @@ library(shiny)
  quadgram <- readRDS("quadgram.RData");
  trigram <- readRDS("trigram.RData");
  bigram <- readRDS("bigram.RData");
- mesg <<- "xxx "
+ mesg <<- "ready"
 # 
-# Reset the user input text and set f user input before predicting the next word
+# Reset the user input text before predicting the next word
 # 
  Predict <- function(x) {
    xclean <- removeNumbers(removePunctuation(tolower(x)))
